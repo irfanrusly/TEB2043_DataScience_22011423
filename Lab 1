@@ -1,0 +1,17 @@
+Activity 1
+> numbers <- 1:20
+> squares <-numbers^2
+> print(squares)
+
+Activity 2
+> num1 <- 0.956786
+> num2 <- 7.8345901
+> rounded_num1 <- round(num1, digits = 2)
+> rounded_num2 <- round(num2, digits = 3)
+> print(rounded_num1)
+> print(rounded_num2)
+
+Activity 3
+> radius <- as.numeric(readline(prompt = "Enter the radius of the cirle: "))
+> area <- pi * radius^2
+> cat("The area of the circle is:", area)
