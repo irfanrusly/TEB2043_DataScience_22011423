@@ -1,0 +1,9 @@
+# 2. Get two strings from user
+str1 <- readline("Enter string 1: ")
+str2 <- readline("Enter string 2: ")
+
+# convert both to lowervcase to make it case=insensitive
+are_similar <- tolower(str1) == tolower(str2)
+
+# display result
+cat("This program compare 2 strings. Both inputs are similar:", are_similar, "\n")
