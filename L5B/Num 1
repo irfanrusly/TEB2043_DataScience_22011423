@@ -1,0 +1,8 @@
+# Input year
+year <- 2004 # Change this to test 1900 or other years
+
+if ((year %% 4 == 0 && year %% 100 != 0) || (year %% 400 == 0)) {
+  cat(year, "is a leap year.\n")
+} else {
+  cat(year, "is not a leap year.\n")
+}
