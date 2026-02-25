@@ -1,0 +1,25 @@
+# Array 1: 2 rows, 4 columns, 3 tables [cite: 195]
+# Data sequence to match sample output [cite: 198-234]
+data1 <- 1:24
+Array1 <- array(data1, dim = c(2, 4, 3))
+print("Array 1:")
+print(Array1)
+
+# Array 2: 3 rows, 2 columns, 5 tables [cite: 195]
+# Data sequence to match sample output [cite: 235-289]
+data2 <- 25:54
+Array2 <- array(data2, dim = c(3, 2, 5))
+print("Array 2:")
+print(Array2)
+
+# Accessing specific elements [cite: 196]
+cat("\n--- Access Results ---\n")
+
+# 1. Print the second row of the second matrix of the first array [cite: 196, 290]
+print("Second row of the second matrix (Array 1):")
+print(Array1[2, , 2]) 
+
+# 2. Print the element in the 3rd row and 2nd column (Note: PDF says 3rd col, 
+# but sample output 30 matches row 3, col 2 of matrix 1) [cite: 196, 292]
+print("Element in 3rd row and 2nd column of the 1st matrix (Array 2):")
+print(Array2[3, 2, 1])
