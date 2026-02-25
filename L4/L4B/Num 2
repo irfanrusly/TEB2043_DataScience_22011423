@@ -1,0 +1,29 @@
+# Input vector [cite: 192]
+V1 <- c(2,3,1,5,4,6,8,7,9)
+
+# Create 3x3 matrix (Matrix-1) [cite: 193]
+Matrix1 <- matrix(V1, nrow = 3, ncol = 3)
+colnames(Matrix1) <- c("C1", "C2", "C3")
+rownames(Matrix1) <- c("R1", "R2", "R3")
+print("Matrix-1:")
+print(Matrix1)
+
+# Transpose Matrix-1 to create Matrix-2 [cite: 194]
+Matrix2 <- t(Matrix1)
+colnames(Matrix2) <- c("Col_A", "Col_B", "Col_C")
+rownames(Matrix2) <- c("Row_A", "Row_B", "Row_C")
+print("Matrix-2 (Transposed):")
+print(Matrix2)
+
+# Arithmetic Operations [cite: 194]
+print("Addition:")
+print(Matrix1 + Matrix2)
+
+print("Subtraction:")
+print(Matrix1 - Matrix2)
+
+print("Multiplication (Element-wise):")
+print(Matrix1 * Matrix2)
+
+print("Division:")
+print(Matrix1 / Matrix2)
